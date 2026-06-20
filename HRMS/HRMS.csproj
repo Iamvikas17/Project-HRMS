@@ -1993,10 +1993,26 @@
     <Content Include="assets\plugins\twitter-bootstrap-wizard\form-wizard.js" />
     <Content Include="assets\plugins\twitter-bootstrap-wizard\jquery.bootstrap.wizard.min.js" />
     <Content Include="assets\plugins\twitter-bootstrap-wizard\prettify.js" />
+    <Content Include="Employee\EmpList.aspx" />
+    <Content Include="Employee\EmployeeGrid.aspx" />
     <Content Include="MasterPages\Admin.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Employee\EmpList.aspx.cs">
+      <DependentUpon>EmpList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\EmpList.aspx.designer.cs">
+      <DependentUpon>EmpList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Employee\EmployeeGrid.aspx.cs">
+      <DependentUpon>EmployeeGrid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee\EmployeeGrid.aspx.designer.cs">
+      <DependentUpon>EmployeeGrid.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MasterPages\Admin.aspx.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
