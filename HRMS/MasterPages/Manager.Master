@@ -1,0 +1,1271 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Manager.master.cs" Inherits="HRMS.MasterPages.Manager" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.png">
+ <!-- Apple Touch Icon -->
+ <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
+
+ <!-- Theme Script js -->
+ <script src="../assets/js/theme-script.js"></script>
+
+ <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+ <!-- Feather CSS -->
+ <link rel="stylesheet" href="../assets/plugins/icons/feather/feather.css">
+
+ <!-- Tabler Icon CSS -->
+ <link rel="stylesheet" href="../assets/plugins/tabler-icons/tabler-icons.css">
+
+ <!-- Summernote CSS -->
+ <link rel="stylesheet" href="../assets/plugins/summernote/summernote-lite.min.css">
+
+ <!-- Select2 CSS -->
+ <link rel="stylesheet" href="../assets/plugins/select2/css/select2.min.css">
+
+ <!-- Bootstrap Tagsinput CSS -->
+ <link rel="stylesheet" href="../assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css">
+
+ <!-- Fontawesome CSS -->
+ <link rel="stylesheet" href="../assets/plugins/fontawesome/css/fontawesome.min.css">
+ <link rel="stylesheet" href="../assets/plugins/fontawesome/css/all.min.css">
+
+ <!-- Datetimepicker CSS -->
+ <link rel="stylesheet" href="../assets/css/bootstrap-datetimepicker.min.css">
+
+ <!-- Daterangepikcer CSS -->
+ <link rel="stylesheet" href="../assets/plugins/daterangepicker/daterangepicker.css">
+
+ <!-- Color Picker Css -->
+ <link rel="stylesheet" href="../assets/plugins/flatpickr/flatpickr.min.css">
+ <link rel="stylesheet" href="../assets/plugins/@simonwep/pickr/themes/nano.min.css">
+
+ <!-- Main CSS -->
+ <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <form id="form1" runat="server">
+         <div class="main-wrapper">
+            <div b-ietxc090g4="" class="header">
+                <div b-ietxc090g4="" class="main-header">
+
+                    <div b-ietxc090g4="" class="header-left">
+                        <a b-ietxc090g4="" href="#" class="logo">
+                            <img b-ietxc090g4="" src="assets/img/Logo_Pulse360 (2).png" alt="pic">
+                        </a>
+                        <a b-ietxc090g4="" href="#" class="dark-logo">
+                            <img b-ietxc090g4="" src="assets/img/Logo_Pulse360 (2).png" alt="Logo">
+                        </a>
+                    </div>
+
+                    <a b-ietxc090g4="" id="mobile_btn" class="mobile_btn" href="#sidebar">
+                        <span b-ietxc090g4="" class="bar-icon">
+                            <span b-ietxc090g4=""></span>
+                            <span b-ietxc090g4=""></span>
+                            <span b-ietxc090g4=""></span>
+                        </span>
+                    </a>
+
+                    <div b-ietxc090g4="" class="header-user">
+                        <div b-ietxc090g4="" class="nav user-menu nav-list">
+
+                            <div b-ietxc090g4="" class="me-auto d-flex align-items-center" id="header-search">
+                                <a b-ietxc090g4="" id="toggle_btn" href="javascript:void(0);" class="btn btn-menubar me-1">
+                                    <i b-ietxc090g4="" class="ti ti-arrow-bar-to-left"></i>
+                                </a>
+                                <!-- Search -->
+                                <div b-ietxc090g4="" class="input-group input-group-flat d-inline-flex me-1">
+                                    <span b-ietxc090g4="" class="input-icon-addon">
+                                        <i b-ietxc090g4="" class="ti ti-search"></i>
+                                    </span>
+                                    <input b-ietxc090g4="" type="text" class="form-control" placeholder="Search in Pulse360">
+                                    <span b-ietxc090g4="" class="input-group-text">
+                                        <kbd b-ietxc090g4="">CTRL + / </kbd>
+                                    </span>
+                                </div>
+                                <!-- /Search -->
+                                <div b-ietxc090g4="" class="dropdown crm-dropdown">
+                                    <a b-ietxc090g4="" href="#" class="btn btn-menubar me-1" data-bs-toggle="dropdown">
+                                        <i b-ietxc090g4="" class="ti ti-layout-grid"></i>
+                                    </a>
+                                    <div b-ietxc090g4="" class="dropdown-menu dropdown-lg dropdown-menu-start">
+                                        <div b-ietxc090g4="" class="card mb-0 border-0 shadow-none">
+                                            <div b-ietxc090g4="" class="card-header">
+                                                <h4 b-ietxc090g4="">CRM</h4>
+                                            </div>
+                                            <div b-ietxc090g4="" class="card-body pb-1">
+                                                <div b-ietxc090g4="" class="row">
+                                                    <div b-ietxc090g4="" class="col-sm-6">
+                                                        <a b-ietxc090g4="" href="contacts.html" class="d-flex align-items-center justify-content-between p-2 crm-link mb-3">
+                                                            <span b-ietxc090g4="" class="d-flex align-items-center me-3">
+                                                                <i b-ietxc090g4="" class="ti ti-user-shield text-default me-2"></i>Contacts
+                                                            </span>
+                                                            <i b-ietxc090g4="" class="ti ti-arrow-right"></i>
+                                                        </a>
+                                                        <a b-ietxc090g4="" href="deals-grid.html" class="d-flex align-items-center justify-content-between p-2 crm-link mb-3">
+                                                            <span b-ietxc090g4="" class="d-flex align-items-center me-3">
+                                                                <i b-ietxc090g4="" class="ti ti-heart-handshake text-default me-2"></i>Deals
+                                                            </span>
+                                                            <i b-ietxc090g4="" class="ti ti-arrow-right"></i>
+                                                        </a>
+                                                        <a b-ietxc090g4="" href="pipeline.html" class="d-flex align-items-center justify-content-between p-2 crm-link mb-3">
+                                                            <span b-ietxc090g4="" class="d-flex align-items-center me-3">
+                                                                <i b-ietxc090g4="" class="ti ti-timeline-event-text text-default me-2"></i>Pipeline
+                                                            </span>
+                                                            <i b-ietxc090g4="" class="ti ti-arrow-right"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div b-ietxc090g4="" class="col-sm-6">
+                                                        <a b-ietxc090g4="" href="companies-grid.html" class="d-flex align-items-center justify-content-between p-2 crm-link mb-3">
+                                                            <span b-ietxc090g4="" class="d-flex align-items-center me-3">
+                                                                <i b-ietxc090g4="" class="ti ti-building text-default me-2"></i>Companies
+                                                            </span>
+                                                            <i b-ietxc090g4="" class="ti ti-arrow-right"></i>
+                                                        </a>
+                                                        <a b-ietxc090g4="" href="leads-grid.html" class="d-flex align-items-center justify-content-between p-2 crm-link mb-3">
+                                                            <span b-ietxc090g4="" class="d-flex align-items-center me-3">
+                                                                <i b-ietxc090g4="" class="ti ti-user-check text-default me-2"></i>Leads
+                                                            </span>
+                                                            <i b-ietxc090g4="" class="ti ti-arrow-right"></i>
+                                                        </a>
+                                                        <a b-ietxc090g4="" href="activity.html" class="d-flex align-items-center justify-content-between p-2 crm-link mb-3">
+                                                            <span b-ietxc090g4="" class="d-flex align-items-center me-3">
+                                                                <i b-ietxc090g4="" class="ti ti-activity text-default me-2"></i>Activities
+                                                            </span>
+                                                            <i b-ietxc090g4="" class="ti ti-arrow-right"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a b-ietxc090g4="" href="profile-settings.html" class="btn btn-menubar">
+                                    <i b-ietxc090g4="" class="ti ti-settings-cog"></i>
+                                </a>
+                            </div>
+
+                            <!-- Horizontal Single -->
+                            <div b-ietxc090g4="" class="sidebar sidebar-horizontal" id="horizontal-single">
+                                <div b-ietxc090g4="" class="sidebar-menu">
+                                    <div b-ietxc090g4="" class="main-menu">
+                                        <ul b-ietxc090g4="" class="nav-menu">
+                                            <li b-ietxc090g4="" class="menu-title">
+                                                <span b-ietxc090g4="">Main</span>
+                                            </li>
+                                            <li b-ietxc090g4="" class="submenu">
+                                                <a b-ietxc090g4="" href="#" class="active">
+                                                    <i b-ietxc090g4="" class="ti ti-smart-home"></i><span b-ietxc090g4="">Dashboard</span>
+                                                    <span b-ietxc090g4="" class="menu-arrow"></span>
+                                                </a>
+                                                <ul b-ietxc090g4="">
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="index.html" class="active">Admin Dashboard</a></li>
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="employee-dashboard.html">Employee Dashboard</a></li>
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="deals-dashboard.html">Deals Dashboard</a></li>
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="leads-dashboard.html">Leads Dashboard</a></li>
+                                                </ul>
+                                            </li>
+                                            <li b-ietxc090g4="" class="submenu">
+                                                <a b-ietxc090g4="" href="#">
+                                                    <i b-ietxc090g4="" class="ti ti-user-star"></i><span b-ietxc090g4="">Super Admin</span>
+                                                    <span b-ietxc090g4="" class="menu-arrow"></span>
+                                                </a>
+                                                <ul b-ietxc090g4="">
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="dashboard.html">Dashboard</a></li>
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="companies.html">Companies</a></li>
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="subscription.html">Subscriptions</a></li>
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="packages.html">Packages</a></li>
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="domain.html">Domain</a></li>
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="purchase-transaction.html">Purchase Transaction</a></li>
+                                                </ul>
+                                            </li>
+                                            <li b-ietxc090g4="" class="submenu">
+                                                <a b-ietxc090g4="" href="#">
+                                                    <i b-ietxc090g4="" class="ti ti-layout-grid-add"></i><span b-ietxc090g4="">Applications</span>
+                                                    <span b-ietxc090g4="" class="menu-arrow"></span>
+                                                </a>
+                                                <ul b-ietxc090g4="">
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="chat.html">Chat</a></li>
+                                                    <li b-ietxc090g4="" class="submenu submenu-two">
+                                                        <a b-ietxc090g4="" href="call.html">Calls<span b-ietxc090g4="" class="menu-arrow inside-submenu"></span>
+                                                        </a>
+                                                        <ul b-ietxc090g4="">
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="voice-call.html">Voice Call</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="video-call.html">Video Call</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="outgoing-call.html">Outgoing Call</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="incoming-call.html">Incoming Call</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="call-history.html">Call History</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="calendar.html">Calendar</a></li>
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="email.html">Email</a></li>
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="todo.html">To Do</a></li>
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="notes.html">Notes</a></li>
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="file-manager.html">File Manager</a></li>
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="kanban-view.html">Kanban</a></li>
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="invoices.html">Invoices</a></li>
+                                                </ul>
+                                            </li>
+                                            <li b-ietxc090g4="" class="submenu">
+                                                <a b-ietxc090g4="" href="#">
+                                                    <i b-ietxc090g4="" class="ti ti-layout-board-split"></i><span b-ietxc090g4="">Layouts</span>
+                                                    <span b-ietxc090g4="" class="menu-arrow"></span>
+                                                </a>
+                                                <ul b-ietxc090g4="">
+                                                    <li b-ietxc090g4="">
+                                                        <a b-ietxc090g4="" href="layout-horizontal.html">
+                                                            <span b-ietxc090g4="">Horizontal</span>
+                                                        </a>
+                                                    </li>
+                                                    <li b-ietxc090g4="">
+                                                        <a b-ietxc090g4="" href="layout-detached.html">
+                                                            <span b-ietxc090g4="">Detached</span>
+                                                        </a>
+                                                    </li>
+                                                    <li b-ietxc090g4="">
+                                                        <a b-ietxc090g4="" href="layout-modern.html">
+                                                            <span b-ietxc090g4="">Modern</span>
+                                                        </a>
+                                                    </li>
+                                                    <li b-ietxc090g4="">
+                                                        <a b-ietxc090g4="" href="layout-two-column.html">
+                                                            <span b-ietxc090g4="">Two Column </span>
+                                                        </a>
+                                                    </li>
+                                                    <li b-ietxc090g4="">
+                                                        <a b-ietxc090g4="" href="layout-hovered.html">
+                                                            <span b-ietxc090g4="">Hovered</span>
+                                                        </a>
+                                                    </li>
+                                                    <li b-ietxc090g4="">
+                                                        <a b-ietxc090g4="" href="layout-box.html">
+                                                            <span b-ietxc090g4="">Boxed</span>
+                                                        </a>
+                                                    </li>
+                                                    <li b-ietxc090g4="">
+                                                        <a b-ietxc090g4="" href="layout-horizontal-single.html">
+                                                            <span b-ietxc090g4="">Horizontal Single</span>
+                                                        </a>
+                                                    </li>
+                                                    <li b-ietxc090g4="">
+                                                        <a b-ietxc090g4="" href="layout-horizontal-overlay.html">
+                                                            <span b-ietxc090g4="">Horizontal Overlay</span>
+                                                        </a>
+                                                    </li>
+                                                    <li b-ietxc090g4="">
+                                                        <a b-ietxc090g4="" href="layout-horizontal-box.html">
+                                                            <span b-ietxc090g4="">Horizontal Box</span>
+                                                        </a>
+                                                    </li>
+                                                    <li b-ietxc090g4="">
+                                                        <a b-ietxc090g4="" href="layout-horizontal-sidemenu.html">
+                                                            <span b-ietxc090g4="">Menu Aside</span>
+                                                        </a>
+                                                    </li>
+                                                    <li b-ietxc090g4="">
+                                                        <a b-ietxc090g4="" href="layout-vertical-transparent.html">
+                                                            <span b-ietxc090g4="">Transparent</span>
+                                                        </a>
+                                                    </li>
+                                                    <li b-ietxc090g4="">
+                                                        <a b-ietxc090g4="" href="layout-without-header.html">
+                                                            <span b-ietxc090g4="">Without Header</span>
+                                                        </a>
+                                                    </li>
+                                                    <li b-ietxc090g4="">
+                                                        <a b-ietxc090g4="" href="layout-rtl.html">
+                                                            <span b-ietxc090g4="">RTL</span>
+                                                        </a>
+                                                    </li>
+                                                    <li b-ietxc090g4="">
+                                                        <a b-ietxc090g4="" href="layout-dark.html">
+                                                            <span b-ietxc090g4="">Dark</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li b-ietxc090g4="" class="submenu">
+                                                <a b-ietxc090g4="" href="#">
+                                                    <i b-ietxc090g4="" class="ti ti-user-star"></i><span b-ietxc090g4="">Projects</span>
+                                                    <span b-ietxc090g4="" class="menu-arrow"></span>
+                                                </a>
+                                                <ul b-ietxc090g4="">
+                                                    <li b-ietxc090g4="">
+                                                        <a b-ietxc090g4="" href="clients-grid.html">
+                                                            <span b-ietxc090g4="">Clients</span>
+                                                        </a>
+                                                    </li>
+                                                    <li b-ietxc090g4="" class="submenu">
+                                                        <a b-ietxc090g4="" href="javascript:void(0);">
+                                                            <span b-ietxc090g4="">Projects</span>
+                                                            <span b-ietxc090g4="" class="menu-arrow"></span>
+                                                        </a>
+                                                        <ul b-ietxc090g4="">
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="projects-grid.html">Projects</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="tasks.html">Tasks</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="task-board.html">Task Board</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li b-ietxc090g4="" class="submenu">
+                                                        <a b-ietxc090g4="" href="call.html">Crm<span b-ietxc090g4="" class="menu-arrow"></span></a>
+                                                        <ul b-ietxc090g4="">
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="contacts-grid.html"><span b-ietxc090g4="">Contacts</span></a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="companies-grid.html"><span b-ietxc090g4="">Companies</span></a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="deals-grid.html"><span b-ietxc090g4="">Deals</span></a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="leads-grid.html"><span b-ietxc090g4="">Leads</span></a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="pipeline.html"><span b-ietxc090g4="">Pipeline</span></a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="analytics.html"><span b-ietxc090g4="">Analytics</span></a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="activity.html"><span b-ietxc090g4="">Activities</span></a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li b-ietxc090g4="" class="submenu">
+                                                        <a b-ietxc090g4="" href="javascript:void(0);">
+                                                            <span b-ietxc090g4="">Employees</span>
+                                                            <span b-ietxc090g4="" class="menu-arrow"></span>
+                                                        </a>
+                                                        <ul b-ietxc090g4="">
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="employees.html">Employee Lists</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="employees-grid.html">Employee Grid</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="employee-details.html">Employee Details</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="departments.html">Departments</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="designations.html">Designations</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="policy.html">Policies</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li b-ietxc090g4="" class="submenu">
+                                                        <a b-ietxc090g4="" href="javascript:void(0);">
+                                                            <span b-ietxc090g4="">Tickets</span>
+                                                            <span b-ietxc090g4="" class="menu-arrow"></span>
+                                                        </a>
+                                                        <ul b-ietxc090g4="">
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="tickets.html">Tickets</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="ticket-details.html">Ticket Details</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="holidays.html"><span b-ietxc090g4="">Holidays</span></a></li>
+                                                    <li b-ietxc090g4="" class="submenu">
+                                                        <a b-ietxc090g4="" href="javascript:void(0);">
+                                                            <span b-ietxc090g4="">Attendance</span>
+                                                            <span b-ietxc090g4="" class="menu-arrow"></span>
+                                                        </a>
+                                                        <ul b-ietxc090g4="">
+                                                            <li b-ietxc090g4="" class="submenu">
+                                                                <a b-ietxc090g4="" href="javascript:void(0);">Leaves<span b-ietxc090g4="" class="menu-arrow"></span></a>
+                                                                <ul b-ietxc090g4="">
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="leaves.html">Leaves (Admin)</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="leaves-employee.html">Leave (Employee)</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="leave-settings.html">Leave Settings</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="attendance-admin.html">Attendance (Admin)</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="attendance-employee.html">Attendance (Employee)</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="timesheets.html">Timesheets</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="schedule-timing.html">Shift &amp; Schedule</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="overtime.html">Overtime</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li b-ietxc090g4="" class="submenu">
+                                                        <a b-ietxc090g4="" href="javascript:void(0);">
+                                                            <span b-ietxc090g4="">Performance</span>
+                                                            <span b-ietxc090g4="" class="menu-arrow"></span>
+                                                        </a>
+                                                        <ul b-ietxc090g4="">
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="performance-indicator.html">Performance Indicator</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="performance-review.html">Performance Review</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="performance-appraisal.html">Performance Appraisal</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="goal-tracking.html">Goal List</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="goal-type.html">Goal Type</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li b-ietxc090g4="" class="submenu">
+                                                        <a b-ietxc090g4="" href="javascript:void(0);">
+                                                            <span b-ietxc090g4="">Training</span>
+                                                            <span b-ietxc090g4="" class="menu-arrow"></span>
+                                                        </a>
+                                                        <ul b-ietxc090g4="">
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="training.html">Training List</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="trainers.html">Trainers</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="training-type.html">Training Type</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="promotion.html"><span b-ietxc090g4="">Promotion</span></a></li>
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="resignation.html"><span b-ietxc090g4="">Resignation</span></a></li>
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="termination.html"><span b-ietxc090g4="">Termination</span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li b-ietxc090g4="" class="submenu">
+                                                <a b-ietxc090g4="" href="#">
+                                                    <i b-ietxc090g4="" class="ti ti-user-star"></i><span b-ietxc090g4="">Administration</span>
+                                                    <span b-ietxc090g4="" class="menu-arrow"></span>
+                                                </a>
+                                                <ul b-ietxc090g4="">
+                                                    <li b-ietxc090g4="" class="submenu">
+                                                        <a b-ietxc090g4="" href="javascript:void(0);">
+                                                            <span b-ietxc090g4="">Sales</span>
+                                                            <span b-ietxc090g4="" class="menu-arrow"></span>
+                                                        </a>
+                                                        <ul b-ietxc090g4="">
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="estimates.html">Estimates</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="invoices.html">Invoices</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="payments.html">Payments</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="expenses.html">Expenses</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="provident-fund.html">Provident Fund</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="taxes.html">Taxes</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li b-ietxc090g4="" class="submenu">
+                                                        <a b-ietxc090g4="" href="javascript:void(0);">
+                                                            <span b-ietxc090g4="">Accounting</span>
+                                                            <span b-ietxc090g4="" class="menu-arrow"></span>
+                                                        </a>
+                                                        <ul b-ietxc090g4="">
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="categories.html">Categories</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="budgets.html">Budgets</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="budget-expenses.html">Budget Expenses</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="budget-revenues.html">Budget Revenues</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li b-ietxc090g4="" class="submenu">
+                                                        <a b-ietxc090g4="" href="javascript:void(0);">
+                                                            <span b-ietxc090g4="">Payroll</span>
+                                                            <span b-ietxc090g4="" class="menu-arrow"></span>
+                                                        </a>
+                                                        <ul b-ietxc090g4="">
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="employee-salary.html">Employee Salary</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="payslip.html">Payslip</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="payroll.html">Payroll Items</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li b-ietxc090g4="" class="submenu">
+                                                        <a b-ietxc090g4="" href="javascript:void(0);">
+                                                            <span b-ietxc090g4="">Assets</span>
+                                                            <span b-ietxc090g4="" class="menu-arrow"></span>
+                                                        </a>
+                                                        <ul b-ietxc090g4="">
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="assets.html">Assets</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="asset-categories.html">Asset Categories</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li b-ietxc090g4="" class="submenu">
+                                                        <a b-ietxc090g4="" href="javascript:void(0);">
+                                                            <span b-ietxc090g4="">Help &amp; Supports</span>
+                                                            <span b-ietxc090g4="" class="menu-arrow"></span>
+                                                        </a>
+                                                        <ul b-ietxc090g4="">
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="knowledgebase.html">Knowledge Base</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="activity.html">Activities</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li b-ietxc090g4="" class="submenu">
+                                                        <a b-ietxc090g4="" href="javascript:void(0);">
+                                                            <span b-ietxc090g4="">User Management</span>
+                                                            <span b-ietxc090g4="" class="menu-arrow"></span>
+                                                        </a>
+                                                        <ul b-ietxc090g4="">
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="users.html">Users</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="roles-permissions.html">Roles &amp; Permissions</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li b-ietxc090g4="" class="submenu">
+                                                        <a b-ietxc090g4="" href="javascript:void(0);">
+                                                            <span b-ietxc090g4="">Reports</span>
+                                                            <span b-ietxc090g4="" class="menu-arrow"></span>
+                                                        </a>
+                                                        <ul b-ietxc090g4="">
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="expenses-report.html">Expense Report</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="invoice-report.html">Invoice Report</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="payment-report.html">Payment Report</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="project-report.html">Project Report</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="task-report.html">Task Report</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="user-report.html">User Report</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="employee-report.html">Employee Report</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="payslip-report.html">Payslip Report</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="attendance-report.html">Attendance Report</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="leave-report.html">Leave Report</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="daily-report.html">Daily Report</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li b-ietxc090g4="" class="submenu">
+                                                        <a b-ietxc090g4="" href="javascript:void(0);">
+                                                            <span b-ietxc090g4="">Settings</span>
+                                                            <span b-ietxc090g4="" class="menu-arrow"></span>
+                                                        </a>
+                                                        <ul b-ietxc090g4="">
+                                                            <li b-ietxc090g4="" class="submenu">
+                                                                <a b-ietxc090g4="" href="javascript:void(0);">General Settings<span b-ietxc090g4="" class="menu-arrow"></span></a>
+                                                                <ul b-ietxc090g4="">
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="profile-settings.html">Profile</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="security-settings.html">Security</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="notification-settings.html">Notifications</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="connected-apps.html">Connected Apps</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li b-ietxc090g4="" class="submenu">
+                                                                <a b-ietxc090g4="" href="javascript:void(0);">Website Settings<span b-ietxc090g4="" class="menu-arrow"></span></a>
+                                                                <ul b-ietxc090g4="">
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="bussiness-settings.html">Business Settings</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="seo-settings.html">SEO Settings</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="localization-settings.html">Localization</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="prefixes.html">Prefixes</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="preferences.html">Preferences</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="performance-appraisal.html">Appearance</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="language.html">Language</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="authentication-settings.html">Authentication</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="ai-settings.html">AI Settings</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li b-ietxc090g4="" class="submenu">
+                                                                <a b-ietxc090g4="" href="javascript:void(0);">App Settings<span b-ietxc090g4="" class="menu-arrow"></span></a>
+                                                                <ul b-ietxc090g4="">
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="salary-settings.html">Salary Settings</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="approval-settings.html">Approval Settings</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="invoice-settings.html">Invoice Settings</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="leave-type.html">Leave Type</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="custom-fields.html">Custom Fields</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li b-ietxc090g4="" class="submenu">
+                                                                <a b-ietxc090g4="" href="javascript:void(0);">System Settings<span b-ietxc090g4="" class="menu-arrow"></span></a>
+                                                                <ul b-ietxc090g4="">
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="email-settings.html">Email Settings</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="email-template.html">Email Templates</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="sms-settings.html">SMS Settings</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="sms-template.html">SMS Templates</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="otp-settings.html">OTP</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="gdpr.html">GDPR Cookies</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="maintenance-mode.html">Maintenance Mode</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li b-ietxc090g4="" class="submenu">
+                                                                <a b-ietxc090g4="" href="javascript:void(0);">Financial Settings<span b-ietxc090g4="" class="menu-arrow"></span></a>
+                                                                <ul b-ietxc090g4="">
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="payment-gateways.html">Payment Gateways</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="tax-rates.html">Tax Rate</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="currencies.html">Currencies</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li b-ietxc090g4="" class="submenu">
+                                                                <a b-ietxc090g4="" href="javascript:void(0);">Other Settings<span b-ietxc090g4="" class="menu-arrow"></span></a>
+                                                                <ul b-ietxc090g4="">
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="custom-css.html">Custom CSS</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="custom-js.html">Custom JS</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="cronjob.html">Cronjob</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="storage-settings.html">Storage</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="ban-ip-address.html">Ban IP Address</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="backup.html">Backup</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="clear-cache.html">Clear Cache</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li b-ietxc090g4="" class="submenu">
+                                                <a b-ietxc090g4="" href="#">
+                                                    <i b-ietxc090g4="" class="ti ti-page-break"></i><span b-ietxc090g4="">Pages</span>
+                                                    <span b-ietxc090g4="" class="menu-arrow"></span>
+                                                </a>
+                                                <ul b-ietxc090g4="">
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="starter.html"><span b-ietxc090g4="">Starter</span></a></li>
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="profile.html"><span b-ietxc090g4="">Profile</span></a></li>
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="gallery.html"><span b-ietxc090g4="">Gallery</span></a></li>
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="search-result.html"><span b-ietxc090g4="">Search Results</span></a></li>
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="timeline.html"><span b-ietxc090g4="">Timeline</span></a></li>
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="pricing.html"><span b-ietxc090g4="">Pricing</span></a></li>
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="coming-soon.html"><span b-ietxc090g4="">Coming Soon</span></a></li>
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="under-maintenance.html"><span b-ietxc090g4="">Under Maintenance</span></a></li>
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="under-construction.html"><span b-ietxc090g4="">Under Construction</span></a></li>
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="api-keys.html"><span b-ietxc090g4="">API Keys</span></a></li>
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="privacy-policy.html"><span b-ietxc090g4="">Privacy Policy</span></a></li>
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="terms-condition.html"><span b-ietxc090g4="">Terms &amp; Conditions</span></a></li>
+                                                    <li b-ietxc090g4="" class="submenu">
+                                                        <a b-ietxc090g4="" href="#"><span b-ietxc090g4="">Content</span> <span b-ietxc090g4="" class="menu-arrow"></span></a>
+                                                        <ul b-ietxc090g4="">
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="pages.html">Pages</a></li>
+                                                            <li b-ietxc090g4="" class="submenu">
+                                                                <a b-ietxc090g4="" href="javascript:void(0);">Blogs<span b-ietxc090g4="" class="menu-arrow"></span></a>
+                                                                <ul b-ietxc090g4="">
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="blogs.html">All Blogs</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="blog-categories.html">Categories</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="blog-comments.html">Comments</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="blog-tags.html">Tags</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li b-ietxc090g4="" class="submenu">
+                                                                <a b-ietxc090g4="" href="javascript:void(0);">Locations<span b-ietxc090g4="" class="menu-arrow"></span></a>
+                                                                <ul b-ietxc090g4="">
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="countries.html">Countries</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="states.html">States</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="cities.html">Cities</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="testimonials.html">Testimonials</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="faq.html">FAQ’S</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li b-ietxc090g4="" class="submenu">
+                                                        <a b-ietxc090g4="" href="#">
+                                                            <span b-ietxc090g4="">Authentication</span>
+                                                            <span b-ietxc090g4="" class="menu-arrow"></span>
+                                                        </a>
+                                                        <ul b-ietxc090g4="">
+                                                            <li b-ietxc090g4="" class="submenu">
+                                                                <a b-ietxc090g4="" href="javascript:void(0);" class="">Login<span b-ietxc090g4="" class="menu-arrow"></span></a>
+                                                                <ul b-ietxc090g4="">
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="login.html">Cover</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="login-2.html">Illustration</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="login-3.html">Basic</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li b-ietxc090g4="" class="submenu">
+                                                                <a b-ietxc090g4="" href="javascript:void(0);" class="">Register<span b-ietxc090g4="" class="menu-arrow"></span></a>
+                                                                <ul b-ietxc090g4="">
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="register.html">Cover</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="register-2.html">Illustration</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="register-3.html">Basic</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li b-ietxc090g4="" class="submenu">
+                                                                <a b-ietxc090g4="" href="javascript:void(0);">Forgot Password<span b-ietxc090g4="" class="menu-arrow"></span></a>
+                                                                <ul b-ietxc090g4="">
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="forgot-password.html">Cover</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="forgot-password-2.html">Illustration</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="forgot-password-3.html">Basic</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li b-ietxc090g4="" class="submenu">
+                                                                <a b-ietxc090g4="" href="javascript:void(0);">Reset Password<span b-ietxc090g4="" class="menu-arrow"></span></a>
+                                                                <ul b-ietxc090g4="">
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="reset-password.html">Cover</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="reset-password-2.html">Illustration</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="reset-password-3.html">Basic</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li b-ietxc090g4="" class="submenu">
+                                                                <a b-ietxc090g4="" href="javascript:void(0);">Email Verification<span b-ietxc090g4="" class="menu-arrow"></span></a>
+                                                                <ul b-ietxc090g4="">
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="email-verification.html">Cover</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="email-verification-2.html">Illustration</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="email-verification-3.html">Basic</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li b-ietxc090g4="" class="submenu">
+                                                                <a b-ietxc090g4="" href="javascript:void(0);">2 Step Verification<span b-ietxc090g4="" class="menu-arrow"></span></a>
+                                                                <ul b-ietxc090g4="">
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="two-step-verification.html">Cover</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="two-step-verification-2.html">Illustration</a></li>
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="two-step-verification-3.html">Basic</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="lock-screen.html">Lock Screen</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="error-404.html">404 Error</a></li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="error-500.html">500 Error</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li b-ietxc090g4="" class="submenu">
+                                                        <a b-ietxc090g4="" href="#">
+                                                            <span b-ietxc090g4="">UI Interface</span>
+                                                            <span b-ietxc090g4="" class="menu-arrow"></span>
+                                                        </a>
+                                                        <ul b-ietxc090g4="">
+                                                            <li b-ietxc090g4="" class="submenu">
+                                                                <a b-ietxc090g4="" href="javascript:void(0);">
+                                                                    <i b-ietxc090g4="" class="ti ti-hierarchy-2"></i>
+                                                                    <span b-ietxc090g4="">Base UI</span>
+                                                                    <span b-ietxc090g4="" class="menu-arrow"></span>
+                                                                </a>
+                                                                <ul b-ietxc090g4="">
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-alerts.html">Alerts</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-accordion.html">Accordion</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-avatar.html">Avatar</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-badges.html">Badges</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-borders.html">Border</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-buttons.html">Buttons</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-buttons-group.html">Button Group</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-breadcrumb.html">Breadcrumb</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-cards.html">Card</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-carousel.html">Carousel</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-colors.html">Colors</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-dropdowns.html">Dropdowns</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-grid.html">Grid</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-images.html">Images</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-lightbox.html">Lightbox</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-media.html">Media</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-modals.html">Modals</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-offcanvas.html">Offcanvas</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-pagination.html">Pagination</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-popovers.html">Popovers</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-progress.html">Progress</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-placeholders.html">Placeholders</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-spinner.html">Spinner</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-sweetalerts.html">Sweet Alerts</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-nav-tabs.html">Tabs</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-toasts.html">Toasts</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-tooltips.html">Tooltips</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-typography.html">Typography</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-video.html">Video</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-sortable.html">Sortable</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-swiperjs.html">Swiperjs</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li b-ietxc090g4="" class="submenu">
+                                                                <a b-ietxc090g4="" href="javascript:void(0);">
+                                                                    <i b-ietxc090g4="" class="ti ti-hierarchy-3"></i>
+                                                                    <span b-ietxc090g4="">Advanced UI</span>
+                                                                    <span b-ietxc090g4="" class="menu-arrow"></span>
+                                                                </a>
+                                                                <ul b-ietxc090g4="">
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-ribbon.html">Ribbon</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-clipboard.html">Clipboard</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-drag-drop.html">Drag &amp; Drop</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-rangeslider.html">Range Slider</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-rating.html">Rating</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-text-editor.html">Text Editor</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-counter.html">Counter</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-scrollbar.html">Scrollbar</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-stickynote.html">Sticky Note</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="ui-timeline.html">Timeline</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li b-ietxc090g4="" class="submenu">
+                                                                <a b-ietxc090g4="" href="javascript:void(0);">
+                                                                    <i b-ietxc090g4="" class="ti ti-input-search"></i>
+                                                                    <span b-ietxc090g4="">Forms</span>
+                                                                    <span b-ietxc090g4="" class="menu-arrow"></span>
+                                                                </a>
+                                                                <ul b-ietxc090g4="">
+                                                                    <li b-ietxc090g4="" class="submenu submenu-two">
+                                                                        <a b-ietxc090g4="" href="javascript:void(0);">Form Elements <span b-ietxc090g4="" class="menu-arrow inside-submenu"></span>
+                                                                        </a>
+                                                                        <ul b-ietxc090g4="">
+                                                                            <li b-ietxc090g4="">
+                                                                                <a b-ietxc090g4="" href="form-basic-inputs.html">Basic Inputs</a>
+                                                                            </li>
+                                                                            <li b-ietxc090g4="">
+                                                                                <a b-ietxc090g4="" href="form-checkbox-radios.html">Checkbox &amp; Radios</a>
+                                                                            </li>
+                                                                            <li b-ietxc090g4="">
+                                                                                <a b-ietxc090g4="" href="form-input-groups.html">Input Groups</a>
+                                                                            </li>
+                                                                            <li b-ietxc090g4="">
+                                                                                <a b-ietxc090g4="" href="form-grid-gutters.html">Grid &amp; Gutters</a>
+                                                                            </li>
+                                                                            <li b-ietxc090g4="">
+                                                                                <a b-ietxc090g4="" href="form-select.html">Form Select</a>
+                                                                            </li>
+                                                                            <li b-ietxc090g4="">
+                                                                                <a b-ietxc090g4="" href="form-mask.html">Input Masks</a>
+                                                                            </li>
+                                                                            <li b-ietxc090g4="">
+                                                                                <a b-ietxc090g4="" href="form-fileupload.html">File Uploads</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="" class="submenu submenu-two">
+                                                                        <a b-ietxc090g4="" href="javascript:void(0);">Layouts <span b-ietxc090g4="" class="menu-arrow inside-submenu"></span>
+                                                                        </a>
+                                                                        <ul b-ietxc090g4="">
+                                                                            <li b-ietxc090g4="">
+                                                                                <a b-ietxc090g4="" href="form-horizontal.html">Horizontal Form</a>
+                                                                            </li>
+                                                                            <li b-ietxc090g4="">
+                                                                                <a b-ietxc090g4="" href="form-vertical.html">Vertical Form</a>
+                                                                            </li>
+                                                                            <li b-ietxc090g4="">
+                                                                                <a b-ietxc090g4="" href="form-floating-labels.html">Floating Labels</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="form-validation.html">Form Validation</a>
+                                                                    </li>
+
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="form-select2.html">Select2</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="form-wizard.html">Form Wizard</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="form-pickers.html">Form Pickers</a>
+                                                                    </li>
+
+                                                                </ul>
+                                                            </li>
+                                                            <li b-ietxc090g4="" class="submenu">
+                                                                <a b-ietxc090g4="" href="javascript:void(0);">
+                                                                    <i b-ietxc090g4="" class="ti ti-table-plus"></i>
+                                                                    <span b-ietxc090g4="">Tables</span>
+                                                                    <span b-ietxc090g4="" class="menu-arrow"></span>
+                                                                </a>
+                                                                <ul b-ietxc090g4="">
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="tables-basic.html">Basic Tables </a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="data-tables.html">Data Table </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li b-ietxc090g4="" class="submenu">
+                                                                <a b-ietxc090g4="" href="javascript:void(0);">
+                                                                    <i b-ietxc090g4="" class="ti ti-chart-line"></i>
+                                                                    <span b-ietxc090g4="">Charts</span>
+                                                                    <span b-ietxc090g4="" class="menu-arrow"></span>
+                                                                </a>
+                                                                <ul b-ietxc090g4="">
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="chart-apex.html">Apex Charts</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="chart-c3.html">Chart C3</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="chart-js.html">Chart Js</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="chart-morris.html">Morris Charts</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="chart-flot.html">Flot Charts</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="chart-peity.html">Peity Charts</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li b-ietxc090g4="" class="submenu">
+                                                                <a b-ietxc090g4="" href="javascript:void(0);">
+                                                                    <i b-ietxc090g4="" class="ti ti-icons"></i>
+                                                                    <span b-ietxc090g4="">Icons</span>
+                                                                    <span b-ietxc090g4="" class="menu-arrow"></span>
+                                                                </a>
+                                                                <ul b-ietxc090g4="">
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="icon-fontawesome.html">Fontawesome Icons</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="icon-tabler.html">Tabler Icons</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="icon-bootstrap.html">Bootstrap Icons</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="icon-remix.html">Remix Icons</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="icon-feather.html">Feather Icons</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="icon-ionic.html">Ionic Icons</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="icon-material.html">Material Icons</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="icon-pe7.html">Pe7 Icons</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="icon-simpleline.html">Simpleline Icons</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="icon-themify.html">Themify Icons</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="icon-weather.html">Weather Icons</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="icon-typicon.html">Typicon Icons</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="icon-flag.html">Flag Icons</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li b-ietxc090g4="" class="submenu">
+                                                                <a b-ietxc090g4="" href="javascript:void(0);">
+                                                                    <i b-ietxc090g4="" class="ti ti-table-plus"></i>
+                                                                    <span b-ietxc090g4="">Maps</span>
+                                                                    <span b-ietxc090g4="" class="menu-arrow"></span>
+                                                                </a>
+                                                                <ul b-ietxc090g4="">
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="maps-vector.html">Vector</a>
+                                                                    </li>
+                                                                    <li b-ietxc090g4="">
+                                                                        <a b-ietxc090g4="" href="maps-leaflet.html">Leaflet</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="#">Documentation</a></li>
+                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="#">Change Log</a></li>
+                                                    <li b-ietxc090g4="" class="submenu">
+                                                        <a b-ietxc090g4="" href="javascript:void(0);"><span b-ietxc090g4="">Multi Level</span><span b-ietxc090g4="" class="menu-arrow"></span></a>
+                                                        <ul b-ietxc090g4="">
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="javascript:void(0);">Multilevel 1</a></li>
+                                                            <li b-ietxc090g4="" class="submenu submenu-two">
+                                                                <a b-ietxc090g4="" href="javascript:void(0);">Multilevel 2<span b-ietxc090g4="" class="menu-arrow inside-submenu"></span></a>
+                                                                <ul b-ietxc090g4="">
+                                                                    <li b-ietxc090g4=""><a b-ietxc090g4="" href="javascript:void(0);">Multilevel 2.1</a></li>
+                                                                    <li b-ietxc090g4="" class="submenu submenu-two submenu-three">
+                                                                        <a b-ietxc090g4="" href="javascript:void(0);">Multilevel 2.2<span b-ietxc090g4="" class="menu-arrow inside-submenu inside-submenu-two"></span></a>
+                                                                        <ul b-ietxc090g4="">
+                                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="javascript:void(0);">Multilevel 2.2.1</a></li>
+                                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="javascript:void(0);">Multilevel 2.2.2</a></li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li b-ietxc090g4=""><a b-ietxc090g4="" href="javascript:void(0);">Multilevel 3</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Horizontal Single -->
+
+                            <div b-ietxc090g4="" class="d-flex align-items-center">
+                                <div b-ietxc090g4="" class="me-1">
+                                    <a b-ietxc090g4="" href="#" class="btn btn-menubar btnFullscreen">
+                                        <i b-ietxc090g4="" class="ti ti-maximize"></i>
+                                    </a>
+                                </div>
+                                <div b-ietxc090g4="" class="dropdown profile-dropdown">
+                                    <a b-ietxc090g4="" class="dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown">
+                                        <span b-ietxc090g4="" class="avatar avatar-sm online">
+                                            <img b-ietxc090g4="" src="/Content/uploads/user2.jpg" alt="Img" class="img-fluid rounded-circle">
+                                        </span>
+                                    </a>
+                                    <div b-ietxc090g4="" class="dropdown-menu shadow-none">
+                                        <div b-ietxc090g4="" class="card mb-0">
+                                            <div b-ietxc090g4="" class="card-header">
+                                                <div b-ietxc090g4="" class="d-flex align-items-center">
+                                                    <span b-ietxc090g4="" class="avatar avatar-lg me-2 avatar-rounded">
+                                                        <img b-ietxc090g4="" src="/Content/uploads/user2.jpg" alt="img">
+                                                    </span>
+                                                    <div b-ietxc090g4="">
+                                                        <h5 b-ietxc090g4="" class="mb-0">Ram Kheloji</h5>
+                                                        <p b-ietxc090g4="" class="fs-12 fw-medium mb-0">ram@gmail.com</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div b-ietxc090g4="" class="card-body">
+                                                <a class="dropdown-item d-inline-flex align-items-center p-0 py-2" href="/Employee/UserProfile">
+                                                    <i b-ietxc090g4="" class="ti ti-user-circle me-1"></i>My Profile
+                                                </a>
+
+                                                <a class="dropdown-item d-inline-flex align-items-center p-0 py-2" href="/KnowledgeBase/Index">
+                                                    <i b-ietxc090g4="" class="ti ti-question-mark me-1"></i>Knowledge Base
+                                                </a>
+                                            </div>
+                                            <div b-ietxc090g4="" class="dropdown-item d-inline-flex align-items-center p-0 py-2">
+                                                <form method="post" style="display: inline;" action="/Auth/Logout">
+                                                    <button b-ietxc090g4="" type="submit" class="btn btn text-danger">
+                                                        <i b-ietxc090g4="" class="ti ti-power"></i>Logout
+                                                    </button>
+                                                    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Fa5DC450-1PlFdI3YW0Oa-EuhzGBjYEOWVmzDs_4I5eNY1I0pRBKBHK_vWnTUQeGJ-8ebMBAC4HZ-zX7-4bdOzcDvhWb4FL_aVZigPW7GBGMKd-I5ryWsCqtbpg-8Q4_JT2IZTSS6Br03X7Jggg3p5kyFEsDZUPp6h_BubP2ai6BhtTUFYbgpfiut3OtulVKw">
+                                                </form>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Menu -->
+                    <div b-ietxc090g4="" class="dropdown mobile-user-menu">
+                        <a b-ietxc090g4="" href="javascript:void(0);" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i b-ietxc090g4="" class="fa fa-ellipsis-v"></i>
+                        </a>
+                        <div b-ietxc090g4="" class="dropdown-menu dropdown-menu-end">
+                            <a b-ietxc090g4="" class="dropdown-item" href="profile.html">My Profile</a>
+                            <a b-ietxc090g4="" class="dropdown-item" href="profile-settings.html">Settings</a>
+                            <a b-ietxc090g4="" class="dropdown-item" href="login.html">Logout</a>
+                        </div>
+                    </div>
+                    <!-- /Mobile Menu -->
+
+                </div>
+
+            </div>
+     <div b-ietxc090g4="" class="sidebar" id="sidebar">
+			<!-- Logo -->
+			<div b-ietxc090g4="" class="sidebar-logo">
+				<a b-ietxc090g4="" href="index.html" class="logo logo-normal">
+				 <img src="<%= ResolveUrl("~/assets/img/logo.svg") %>" />
+				</a>
+				<a b-ietxc090g4="" href="index.html" class="logo-small">
+					 <img src="<%= ResolveUrl("~/assets/img/logo-small.svg") %>" />
+				</a>
+				<a b-ietxc090g4="" href="index.html" class="dark-logo">
+					 <img src="<%= ResolveUrl("~/assets/img/logo-white.svg") %>" />
+				</a>
+			</div>
+			<!-- /Logo -->
+			<div b-ietxc090g4="" class="modern-profile p-3 pb-0">
+				<div b-ietxc090g4="" class="text-center rounded bg-light p-3 mb-4 user-profile">
+					<div b-ietxc090g4="" class="avatar avatar-lg online mb-3">
+						<img b-ietxc090g4="" src="assets/img/profiles/avatar-02.jpg" alt="Img" class="img-fluid rounded-circle">
+					</div>
+					<h6 b-ietxc090g4="" class="fs-12 fw-normal mb-1">Adrian Herman</h6>
+					<p b-ietxc090g4="" class="fs-10">System Admin</p>
+				</div>
+				<div b-ietxc090g4="" class="sidebar-nav mb-3">
+					<ul b-ietxc090g4="" class="nav nav-tabs nav-tabs-solid nav-tabs-rounded nav-justified bg-transparent" role="tablist">
+						<li b-ietxc090g4="" class="nav-item"><a b-ietxc090g4="" class="nav-link active border-0" href="#">Menu</a></li>
+						<li b-ietxc090g4="" class="nav-item"><a b-ietxc090g4="" class="nav-link border-0" href="chat.html">Chats</a></li>
+						<li b-ietxc090g4="" class="nav-item"><a b-ietxc090g4="" class="nav-link border-0" href="email.html">Inbox</a></li>
+					</ul>
+				</div>
+			</div>
+			<div b-ietxc090g4="" class="sidebar-header p-3 pb-0 pt-2">
+				<div b-ietxc090g4="" class="text-center rounded bg-light p-2 mb-4 sidebar-profile d-flex align-items-center">
+					<div b-ietxc090g4="" class="avatar avatar-md onlin">
+						<img b-ietxc090g4="" src="assets/img/profiles/avatar-02.jpg" alt="Img" class="img-fluid rounded-circle">
+					</div>
+					<div b-ietxc090g4="" class="text-start sidebar-profile-info ms-2">
+						<h6 b-ietxc090g4="" class="fs-12 fw-normal mb-1">Adrian Herman</h6>
+						<p b-ietxc090g4="" class="fs-10">System Admin</p>
+					</div>
+				</div>
+				<div b-ietxc090g4="" class="input-group input-group-flat d-inline-flex mb-4">
+					<span b-ietxc090g4="" class="input-icon-addon">
+						<i b-ietxc090g4="" class="ti ti-search"></i>
+					</span>
+					<input b-ietxc090g4="" type="text" class="form-control" placeholder="Search in HRMS">
+					<span b-ietxc090g4="" class="input-group-text">
+						<kbd b-ietxc090g4="">CTRL + / </kbd>
+					</span>
+				</div>
+				<div b-ietxc090g4="" class="d-flex align-items-center justify-content-between menu-item mb-3">
+					<div b-ietxc090g4="" class="me-3">
+						<a b-ietxc090g4="" href="calendar.html" class="btn btn-menubar">
+							<i b-ietxc090g4="" class="ti ti-layout-grid-remove"></i>
+						</a>
+					</div>
+					<div b-ietxc090g4="" class="me-3">
+						<a b-ietxc090g4="" href="chat.html" class="btn btn-menubar position-relative">
+							<i b-ietxc090g4="" class="ti ti-brand-hipchat"></i>
+							<span b-ietxc090g4="" class="badge bg-info rounded-pill d-flex align-items-center justify-content-center header-badge">5</span>
+						</a>
+					</div>
+					<div b-ietxc090g4="" class="me-3 notification-item">
+						<a b-ietxc090g4="" href="activity.html" class="btn btn-menubar position-relative me-1">
+							<i b-ietxc090g4="" class="ti ti-bell"></i>
+							<span b-ietxc090g4="" class="notification-status-dot"></span>
+						</a>
+					</div>
+					<div b-ietxc090g4="" class="me-0">
+						<a b-ietxc090g4="" href="email.html" class="btn btn-menubar">
+							<i b-ietxc090g4="" class="ti ti-message"></i>
+						</a>
+					</div>
+
+
+				</div>
+			</div>
+			<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: 100%; height: 702px;"><div b-ietxc090g4="" class="sidebar-inner slimscroll" style="overflow: hidden; width: 100%; height: 670px;">
+				<div b-ietxc090g4="" id="sidebar-menu" class="sidebar-menu">
+					<ul b-ietxc090g4="">
+						<li b-ietxc090g4="" class="menu-title"><span b-ietxc090g4="">MAIN MENU</span></li>
+
+								<li b-ietxc090g4="" class="submenu">
+									<a b-ietxc090g4="" href="javascript:void(0);" class="">
+										<i b-ietxc090g4="" class="ti ti-box"></i><span b-ietxc090g4="">Projects</span>
+										<span b-ietxc090g4="" class="menu-arrow"></span>
+									</a>
+									<ul b-ietxc090g4="" style="display: none;">
+										<li b-ietxc090g4=""><a href="/ProjectN/ProjectList">Project</a></li>
+										<li b-ietxc090g4=""><a href="/Task/Index">Task</a></li>
+										<li b-ietxc090g4=""><a href="/Taskboard/Index">TaskBoard</a></li>
+									</ul>
+								</li>
+								<li b-ietxc090g4="" class="submenu">
+									<a b-ietxc090g4="" href="javascript:void(0);">
+										<span b-ietxc090g4=""><i b-ietxc090g4="" class="ti ti-file-time"></i>Leave</span>
+										<span b-ietxc090g4="" class="menu-arrow"></span>
+									</a>
+									<ul b-ietxc090g4="">
+										<li b-ietxc090g4="" class="submenu">
+											<a b-ietxc090g4="" href="javascript:void(0);">Leaves<span b-ietxc090g4="" class="menu-arrow"></span></a>
+											<ul b-ietxc090g4="">
+												<li b-ietxc090g4=""><a href="/Leave/ViewLeaveRequests">Leave Approval</a></li>
+												<li b-ietxc090g4=""><a href="/AdminTimesheet/AdminTimesheet">Timesheet Approval</a></li>
+												<li b-ietxc090g4=""><a href="/Leave/DepartmentLeaveDetails">Leave Allocation</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+						<li b-ietxc090g4="" class="submenu">
+							<a b-ietxc090g4="" href="javascript:void(0);">
+								<span b-ietxc090g4=""><i b-ietxc090g4="" class="ti ti-cash"></i>Tickets</span>
+								<span b-ietxc090g4="" class="menu-arrow"></span>
+							</a>
+							<ul b-ietxc090g4="">
+								<li b-ietxc090g4=""><a href="/Tickets/Index">Tickets</a></li>
+								<li b-ietxc090g4=""><a href="/TicketReply/Index">Ticket Details</a></li>
+							</ul>
+						</li>
+						<li b-ietxc090g4="" class="submenu">
+							<%--<form method="post" style="display: inline;" action="/Auth/Logout">--%>
+								<button b-ietxc090g4="" type="submit" class="btn btn text-danger">
+									<i b-ietxc090g4="" class="ti ti-power"></i> Logout
+								</button>
+							<input name="__RequestVerificationToken" type="hidden" value="CfDJ8Fa5DC450-1PlFdI3YW0Oa9_ShMJBK4FnQQ2zLYEngnkoSeU3cq3K9e2LJ0IcH_kgfdR5x0T7GnGDer8d9CfAfjpMs10toflrWVYrj08vp5Ulah2GaxATEWLOTQP3X7RBopRkLyS1d-ukOXJ0Z6YMFzwGTR764RZzYIWiRu7Yxvfah7nblMC67gs5twLS8Zx1g"/><%--</form>--%>
+						</li>
+
+					</ul>
+				</div>
+			</div><div class="slimScrollBar" style="background: rgb(204, 204, 204); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 670px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+
+		</div>
+        </div>
+        <div class="page-wrapper">
+            
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+          <!-- JS files -->
+<%--  <script src="<%= ResolveUrl("~/assets/js/jquery-3.7.1.min.js") %>"></script>
+  <script src="<%= ResolveUrl("~/assets/js/bootstrap.bundle.min.js") %>"></script>
+  <script src="<%= ResolveUrl("~/assets/js/feather.min.js") %>"></script>
+  <script src="<%= ResolveUrl("~/assets/js/jquery.slimscroll.min.js") %>"></script>
+
+  <script src="<%= ResolveUrl("~/assets/js/jquery.dataTables.min.js") %>"></script>
+  <script src="<%= ResolveUrl("~/assets/js/dataTables.bootstrap5.min.js") %>"></script>
+
+  <script src="<%= ResolveUrl("~/assets/js/script.js") %>"></script>--%>
+  <script src="../assets/js/jquery-3.7.1.min.js"></script>
+
+	<!-- Bootstrap Core JS -->
+	<script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+	<!-- Feather Icon JS -->
+	<script src="../assets/js/feather.min.js"></script>
+
+	<!-- Slimscroll JS -->
+	<script src="../assets/js/jquery.slimscroll.min.js"></script>
+
+	<!-- Color Picker JS -->
+	<script src="../assets/plugins/@simonwep/pickr/pickr.es5.min.js"></script>
+
+	<!-- Datatable JS -->
+	<script src="../assets/js/jquery.dataTables.min.js"></script>
+	<script src="../assets/js/dataTables.bootstrap5.min.js"></script>	
+
+	<!-- Daterangepikcer JS -->
+	<script src="../assets/js/moment.js"></script>
+	<script src="../assets/plugins/daterangepicker/daterangepicker.js"></script>
+	<script src="../assets/js/bootstrap-datetimepicker.min.js"></script>
+
+	<!-- Select2 JS -->
+	<script src="../assets/plugins/select2/js/select2.min.js"></script>
+
+	<!-- Chart JS -->
+	<script src="../assets/plugins/apexchart/apexcharts.min.js"></script>
+	<script src="../assets/plugins/apexchart/chart-data.js"></script>
+
+	<!-- Bootstrap Tagsinput JS -->
+  <script src="../assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js"></script>
+
+	<!-- Custom JS -->
+	<script src="../assets/js/theme-colorpicker.js"></script>
+	<script src="../assets/js/script.js"></script>
+</body>
+</html>
